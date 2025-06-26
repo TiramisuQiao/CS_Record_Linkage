@@ -11,16 +11,10 @@ This project focuses on **record linkage**, aiming to accurately identify and li
 - **Hybrid Scoring**: Flexible association of names with multiple IDs.
 
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd bear
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -e .
-   ```
+We use uv for package manmagement
+```
+uv sync
+```
 
 ## Usage
 ### Data Cleaning
@@ -44,11 +38,6 @@ reference_df = pd.DataFrame({
 result = match_variant_to_reference("exampl name", reference_df)
 print(result)  # Output: (1, 95.0)  # ID and similarity score
 ```
-
-### Key Files
-- `src/utils/cleaning.py`: Contains the `clean_name` function for data normalization.
-- `src/utils/matching.py`: Implements the `match_variant_to_reference` function for fuzzy matching.
-- `pyproject.toml`: Manages project metadata and dependencies.
 
 ## Dependencies
 - Python >= 3.9
