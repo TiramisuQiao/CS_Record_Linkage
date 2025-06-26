@@ -1,4 +1,4 @@
-# Bear: Record Linkage Project
+# Record Linkage Project for SCUPI DATAMining
 
 A Python project for data cleaning and matching, developed by the team of Junqiao Wang, Zhengtao Zhang, Hengyuan Xu, Chaojia Yu, and Zihao Zhang from Sichuan University-Pittsburgh Institute.
 
