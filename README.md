@@ -16,29 +16,6 @@ We use uv for package manmagement
 uv sync
 ```
 
-## Usage
-### Data Cleaning
-```python
-from src.utils.cleaning import clean_name
-
-cleaned_name = clean_name("Example Name!")
-print(cleaned_name)  # Output: "example name"
-```
-
-### Matching Records
-```python
-from src.utils.matching import match_variant_to_reference
-import pandas as pd
-
-reference_df = pd.DataFrame({
-    'ID': [1, 2],
-    'CLEAN_NAME': ["example name", "another name"]
-})
-
-result = match_variant_to_reference("exampl name", reference_df)
-print(result)  # Output: (1, 95.0)  # ID and similarity score
-```
-
 ## Dependencies
 - Python >= 3.9
 - pandas >= 2.3.0
